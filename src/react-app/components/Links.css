@@ -1,0 +1,142 @@
+.links {
+  padding: 5rem 2rem;
+  background-color: #fdfbf7;
+}
+
+.links-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.links-title {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #2c2c2c;
+  margin-bottom: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.links-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 2px solid #f0ebe3;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.link-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(212, 165, 116, 0.1), transparent);
+  transition: width 0.5s ease;
+}
+
+.link-card:hover::before {
+  width: 100%;
+}
+
+.link-card:hover {
+  transform: translateY(-5px);
+  border-color: #d4a574;
+  box-shadow: 0 10px 30px rgba(212, 165, 116, 0.2);
+}
+
+.link-icon {
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe8cc 100%);
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.link-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.link-content {
+  flex: 1;
+  text-align: left;
+}
+
+.link-name {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1.5rem;
+  color: #2c2c2c;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.link-description {
+  font-size: 0.95rem;
+  color: #7a7a7a;
+  font-weight: 300;
+}
+
+.link-arrow {
+  font-size: 1.5rem;
+  color: #d4a574;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.link-card:hover .link-arrow {
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .links {
+    padding: 3rem 1.5rem;
+  }
+
+  .links-title {
+    font-size: 2rem;
+  }
+
+  .link-card {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .link-icon {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .link-icon img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .link-name {
+    font-size: 1.3rem;
+  }
+
+  .link-description {
+    font-size: 0.9rem;
+  }
+}

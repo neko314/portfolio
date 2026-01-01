@@ -1,0 +1,33 @@
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0ebe3;
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d4a574;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+}
