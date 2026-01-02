@@ -7,6 +7,10 @@ const Hero: React.FC = () => {
       <div className="hero-content">
         <h2 className="hero-name">Keiko Kaneko</h2>
         <p className="hero-title">東京都在住のWEBプログラマー。将棋が好き。</p>
+        <a href="/about" className="hero-about-link">
+          詳しく見る
+          <span className="hero-arrow">→</span>
+        </a>
       </div>
     </section>
   );
